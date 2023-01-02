@@ -36,42 +36,6 @@ class HomePage extends StatelessWidget {
               // Icons(Icons.notifications)
             ],
           ),
-          // Padding(
-          //   padding:
-          //       const EdgeInsets.symmetric(vertical: 16.0, horizontal: 32.0),
-          //   child: Column(
-          //     children: [
-          //       TextFormField(
-          //         decoration: const InputDecoration(
-          //           hintText: "Enter Username",
-          //           labelText: "Username",
-          //         ),
-          //       ),
-          //       TextFormField(
-          //         obscureText: true,
-          //         decoration: const InputDecoration(
-          //           hintText: "Enter Password",
-          //           labelText: "Password",
-          //         ),
-          //       ),
-          //       const SizedBox(
-          //         height: 20.0,
-          //       ),
-          //       ElevatedButton(
-          //         onPressed: (() {
-          //           print("HELLO");
-          //         }),
-          //         child: const Text("Login"),
-          //         style: TextButton.styleFrom(),
-          //       )
-          //     ],
-          //   ),
-          // ),
-          // Row(
-          //   children: [
-          //     Icon(Icons.search),
-          //   ],
-          // ),
           Padding(
             padding:
                 const EdgeInsets.symmetric(vertical: 20.0, horizontal: 0.0),
@@ -87,6 +51,123 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Expanded(
+                child: Column(
+                  children: [
+                    Image.asset(
+                      "assets/images/image1.jpeg",
+                      width: 162,
+                    ),
+                    const Text(
+                      "Regular Fit Slogan",
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                    ),
+                    const Text("PKR 1,190")
+                  ],
+                ),
+              ),
+              Expanded(
+                child: Column(
+                  children: [
+                    Image.asset(
+                      "assets/images/image2.jpeg",
+                    ),
+                    const Text(
+                      "Regular Fit Polo",
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                    ),
+                    const Text("PKR 1,100-52%")
+                  ],
+                ),
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Expanded(
+                child: Column(
+                  children: [
+                    Image.asset(
+                      "assets/images/image3.jpeg",
+                      width: 162,
+                    ),
+                    const Text(
+                      "Regular Fit Color Block",
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                    ),
+                    const Text("PKR 1,690")
+                  ],
+                ),
+              ),
+              Expanded(
+                child: Column(
+                  children: [
+                    Image.asset(
+                      "assets/images/image4.jpeg",
+                    ),
+                    const Text(
+                      "Regular Fit V-Neck",
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                    ),
+                    const Text("PKR 1,290")
+                  ],
+                ),
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Expanded(
+                child: Column(
+                  children: [
+                    Image.asset(
+                      "assets/images/image5.jpeg",
+                      width: 162,
+                    ),
+                    const Text(
+                      "Regular Fit Pink",
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                    ),
+                    const Text("PKR")
+                  ],
+                ),
+              ),
+              Expanded(
+                child: Column(
+                  children: [
+                    Image.asset(
+                      "assets/images/image6.jpeg",
+                    ),
+                    const Text(
+                      "Regular Fit Black Full Sleeves",
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                    ),
+                    const Text("PKR")
+                  ],
+                ),
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 20,
           ),
         ],
       ),
